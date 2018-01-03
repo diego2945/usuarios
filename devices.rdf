@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns="http://www.w3id.org/abdn/irp/devices/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.w3id.org/abdn/irp/devices/">
+  <owl:Ontology rdf:about="">
+    <rdfs:comment rdf:datatype="xsd:string">The IRP Devices Ontology is a vocabulary for describing aspects of mobile devices.</rdfs:comment>
+    <dc:description rdf:datatype="xsd:string">The IRP Devices Ontology is a vocabulary for describing aspects of mobile devices (particularly Apple mobile phones and Android mobile phones).  The ontology was developed during the Informed Rural Passenger project at the dot.rural Digital Economy Hub, University of Aberdeen, UK uspported by the award made by the RCUK Digital Economy programme; award reference: EP/G066051/1.  The ontology is extends the Semantic Sensor Network ontology to support integration of sensor data from mobile devices with other sensor data.  Mobile devices are described as platforms on which a number of sensing devices are deployed.</dc:description>
+    <dc:title rdf:datatype="xsd:string">The IRP Devices ontology</dc:title>
+    <owl:versionInfo rdf:datatype="xsd:string">Revision: 1.0.1</owl:versionInfo>
+    <dc:creator rdf:datatype="xsd:string">Milan Markovic</dc:creator>
+    <dc:rights rdf:datatype="xsd:string">Licensed under the Lesser General Public Licence (LGPL) Version 2.1 (http://www.gnu.org/licenses/lgpl-2.1.html)</dc:rights>
+    <dc:creator rdf:datatype="xsd:string">David Corsar</dc:creator>
+    <dc:date rdf:datatype="xsd:date">2014-11-12</dc:date>
+  </owl:Ontology>
+  <owl:Class rdf:about="http://www.w3id.org/abdn/irp/devices/MobilePhone">
+    <rdfs:comment rdf:datatype="xsd:string">A model for describing mobile phones based on the information available through the developer SDK.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Mobile phone</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3id.org/abdn/irp/devices/Device"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.w3id.org/abdn/irp/devices/iPhone">
+    <rdfs:subClassOf rdf:resource="http://www.w3id.org/abdn/irp/devices/MobilePhone"/>
+    <rdfs:comment rdf:datatype="xsd:string">Mobile phones produced by Apple, running the iOS operating system.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >iPhone</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.w3id.org/abdn/irp/devices/Software">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:comment rdf:datatype="xsd:string">Top level class for representing software.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Software</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.w3id.org/abdn/irp/devices/Device">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Device</rdfs:label>
+    <rdfs:comment rdf:datatype="xsd:string">A physical device.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.w3id.org/abdn/irp/devices/OperatingSystem">
+    <rdfs:comment rdf:datatype="xsd:string">The operating system running on a mobile phone.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Operating system</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3id.org/abdn/irp/devices/Software"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.w3id.org/abdn/irp/devices/MobileOperator">
+    <rdfs:comment rdf:datatype="xsd:string">Mobile network operators.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Mobile operator</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.w3id.org/abdn/irp/devices/AndroidMobileDevice">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Android phone</rdfs:label>
+    <rdfs:comment rdf:datatype="xsd:string">Mobile phones running the Android operating system.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3id.org/abdn/irp/devices/MobilePhone"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.w3id.org/abdn/irp/devices/os">
+    <rdfs:comment rdf:datatype="xsd:string">Relationship between a mobile phone and the operatoring system it runs.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >os</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.w3id.org/abdn/irp/devices/osversion">
+    <rdfs:comment rdf:datatype="xsd:string">Textual description of the version of an operating system.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >operating system version</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.w3id.org/abdn/irp/devices/uniqueDeviceId">
+    <rdfs:comment rdf:datatype="xsd:string">The unique identifier for a mobile device.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >unique device id</rdfs:label>
+  </owl:DatatypeProperty>
+  <MobileOperator rdf:about="http://www.w3id.org/abdn/irp/devices/o2">
+    <rdfs:comment rdf:datatype="xsd:string">Individual representing the o2 cellular network operator.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >o2</rdfs:label>
+  </MobileOperator>
+  <MobileOperator rdf:about="http://www.w3id.org/abdn/irp/devices/orange">
+    <rdfs:comment rdf:datatype="xsd:string">Individual representing the Orange (now EE) ceullular network operator.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Orange</rdfs:label>
+  </MobileOperator>
+  <OperatingSystem rdf:about="http://www.w3id.org/abdn/irp/devices/android">
+    <rdfs:comment rdf:datatype="xsd:string">Individual representing the Android mobile operating system.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Android</rdfs:label>
+  </OperatingSystem>
+  <OperatingSystem rdf:about="http://www.w3id.org/abdn/irp/devices/iOS">
+    <rdfs:comment rdf:datatype="xsd:string">Individual representing the iOS mobile operator system.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >iOS</rdfs:label>
+  </OperatingSystem>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->
