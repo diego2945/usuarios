@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://diego2945.github.io/usuarios/ontologias/lugares#"
-     xml:base="https://diego2945.github.io/usuarios/ontologias/lugares"
+<rdf:RDF xmlns="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#"
+     xml:base="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="https://diego2945.github.io/usuarios/ontologias/lugares"/>
+    <owl:Ontology rdf:about="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl"/>
     
 
 
@@ -21,80 +21,80 @@
     
 
 
-    <!-- https://diego2945.github.io/usuarios/ontologias/lugares#esCuidadDe -->
+    <!-- https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#esCuidadDe -->
 
-    <owl:ObjectProperty rdf:about="https://diego2945.github.io/usuarios/ontologias/lugares#esCuidadDe">
-        <owl:inverseOf rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares#tieneCuidades"/>
+    <owl:ObjectProperty rdf:about="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#esCuidadDe">
+        <owl:inverseOf rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#tieneCuidades"/>
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares#esCuidadDe"/>
-                <owl:someValuesFrom rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares#Cuidad"/>
+                <owl:onProperty rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#esCuidadDe"/>
+                <owl:someValuesFrom rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#Cuidad"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares#esCuidadDe"/>
+                <owl:onProperty rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#esCuidadDe"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares#Pais"/>
+                <owl:onClass rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#Pais"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://diego2945.github.io/usuarios/ontologias/lugares#tieneClima -->
+    <!-- https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#tieneClima -->
 
-    <owl:ObjectProperty rdf:about="https://diego2945.github.io/usuarios/ontologias/lugares#tieneClima">
+    <owl:ObjectProperty rdf:about="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#tieneClima">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares#tieneClima"/>
-                <owl:someValuesFrom rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares#Lugar"/>
+                <owl:onProperty rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#tieneClima"/>
+                <owl:someValuesFrom rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#Lugar"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares#tieneClima"/>
-                <owl:someValuesFrom rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares#Clima_Frecuente"/>
+                <owl:onProperty rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#tieneClima"/>
+                <owl:someValuesFrom rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#Clima_Frecuente"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://diego2945.github.io/usuarios/ontologias/lugares#tieneCuidades -->
+    <!-- https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#tieneCuidades -->
 
-    <owl:ObjectProperty rdf:about="https://diego2945.github.io/usuarios/ontologias/lugares#tieneCuidades">
+    <owl:ObjectProperty rdf:about="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#tieneCuidades">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares#tieneCuidades"/>
+                <owl:onProperty rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#tieneCuidades"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares#Pais"/>
+                <owl:onClass rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#Pais"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares#tieneCuidades"/>
-                <owl:someValuesFrom rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares#Cuidad"/>
+                <owl:onProperty rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#tieneCuidades"/>
+                <owl:someValuesFrom rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#Cuidad"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://diego2945.github.io/usuarios/ontologias/lugares#usaMoneda -->
+    <!-- https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#usaMoneda -->
 
-    <owl:ObjectProperty rdf:about="https://diego2945.github.io/usuarios/ontologias/lugares#usaMoneda">
+    <owl:ObjectProperty rdf:about="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#usaMoneda">
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares#usaMoneda"/>
+                <owl:onProperty rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#usaMoneda"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares#Lugar"/>
+                <owl:onClass rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#Lugar"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares#usaMoneda"/>
-                <owl:someValuesFrom rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares#Moneda"/>
+                <owl:onProperty rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#usaMoneda"/>
+                <owl:someValuesFrom rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#Moneda"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
@@ -112,37 +112,37 @@
     
 
 
-    <!-- https://diego2945.github.io/usuarios/ontologias/lugares#nivelSeguridad -->
+    <!-- https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#nivelSeguridad -->
 
-    <owl:DatatypeProperty rdf:about="https://diego2945.github.io/usuarios/ontologias/lugares#nivelSeguridad">
+    <owl:DatatypeProperty rdf:about="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#nivelSeguridad">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares#Lugar"/>
+        <rdfs:domain rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#Lugar"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://diego2945.github.io/usuarios/ontologias/lugares#nombreLugar -->
+    <!-- https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#nombreLugar -->
 
-    <owl:DatatypeProperty rdf:about="https://diego2945.github.io/usuarios/ontologias/lugares#nombreLugar">
-        <rdfs:domain rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares#Lugar"/>
+    <owl:DatatypeProperty rdf:about="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#nombreLugar">
+        <rdfs:domain rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#Lugar"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://diego2945.github.io/usuarios/ontologias/lugares#nombreMoneda -->
+    <!-- https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#nombreMoneda -->
 
-    <owl:DatatypeProperty rdf:about="https://diego2945.github.io/usuarios/ontologias/lugares#nombreMoneda">
+    <owl:DatatypeProperty rdf:about="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#nombreMoneda">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- https://diego2945.github.io/usuarios/ontologias/lugares#porcentajeSeguridad -->
+    <!-- https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#porcentajeSeguridad -->
 
-    <owl:DatatypeProperty rdf:about="https://diego2945.github.io/usuarios/ontologias/lugares#porcentajeSeguridad">
-        <rdfs:subPropertyOf rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares#nivelSeguridad"/>
+    <owl:DatatypeProperty rdf:about="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#porcentajeSeguridad">
+        <rdfs:subPropertyOf rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#nivelSeguridad"/>
     </owl:DatatypeProperty>
     
 
@@ -158,36 +158,36 @@
     
 
 
-    <!-- https://diego2945.github.io/usuarios/ontologias/lugares#Clima_Frecuente -->
+    <!-- https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#Clima_Frecuente -->
 
-    <owl:Class rdf:about="https://diego2945.github.io/usuarios/ontologias/lugares#Clima_Frecuente"/>
+    <owl:Class rdf:about="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#Clima_Frecuente"/>
     
 
 
-    <!-- https://diego2945.github.io/usuarios/ontologias/lugares#Cuidad -->
+    <!-- https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#Cuidad -->
 
-    <owl:Class rdf:about="https://diego2945.github.io/usuarios/ontologias/lugares#Cuidad">
-        <rdfs:subClassOf rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares#Lugar"/>
+    <owl:Class rdf:about="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#Cuidad">
+        <rdfs:subClassOf rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#Lugar"/>
     </owl:Class>
     
 
 
-    <!-- https://diego2945.github.io/usuarios/ontologias/lugares#Lugar -->
+    <!-- https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#Lugar -->
 
-    <owl:Class rdf:about="https://diego2945.github.io/usuarios/ontologias/lugares#Lugar"/>
+    <owl:Class rdf:about="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#Lugar"/>
     
 
 
-    <!-- https://diego2945.github.io/usuarios/ontologias/lugares#Moneda -->
+    <!-- https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#Moneda -->
 
-    <owl:Class rdf:about="https://diego2945.github.io/usuarios/ontologias/lugares#Moneda"/>
+    <owl:Class rdf:about="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#Moneda"/>
     
 
 
-    <!-- https://diego2945.github.io/usuarios/ontologias/lugares#Pais -->
+    <!-- https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#Pais -->
 
-    <owl:Class rdf:about="https://diego2945.github.io/usuarios/ontologias/lugares#Pais">
-        <rdfs:subClassOf rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares#Lugar"/>
+    <owl:Class rdf:about="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#Pais">
+        <rdfs:subClassOf rdf:resource="https://diego2945.github.io/usuarios/ontologias/lugares/index.owl#Lugar"/>
     </owl:Class>
 </rdf:RDF>
 
